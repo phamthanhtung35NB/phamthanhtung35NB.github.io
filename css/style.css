@@ -72,11 +72,13 @@ a {
   }
 }
 .container {
-  width: 1024px;
+  max-width: 1024px;
+  width: 90%;
   margin-left: auto;
   margin-right: auto;
   background-color: #d8e3e7;
   border-radius: 10px;
+  padding: 0 20px;
 }
 .heading {
   font-size: 2em;
@@ -100,28 +102,27 @@ h3 {
   font-family: "Roboto Slab", serif;
 }
 .row {
-  max-height: 370px;
   display: flex;
   margin-left: 16px;
-  padding-top: 8px;
+  padding-top: 15px;
   padding-bottom: 8px;
 }
 .col-1 {
-  width: 30%;
+  width: 20%;
   padding-bottom: 20px;
 }
 .col-2 {
   width: 60%;
 }
 .col-3 {
-  width: 20%;
-  background-image: url("../img/cover.jpg");
+  width: 35%;
+  background-image: url("../img/tung.png");
   background-repeat: no-repeat;
-  background-position: -50px 0px;
-  background-size: cover;
+  background-position: 0px 0px;
+  background-size:auto;
 }
 .col-4 {
-  width: 5%;
+  width: 1%;
 }
 .col-40,
 .col-50 {
@@ -156,6 +157,8 @@ hr {
 section {
   margin-top: 30px;
   padding: 10px;
+  width: 100%;
+  box-sizing: border-box;
 }
 .title {
   font-family: Roboto, Helvetica, sans-serif;
@@ -169,7 +172,7 @@ input[type="submit"] {
 #hobbies,
 #information,
 #studies {
-  background-color: #f3f4ed;
+  background-color: #f6f5f5;
 }
 #contact,
 #professionAims,
@@ -220,7 +223,7 @@ input[type="submit"]:hover {
   opacity: 0;
   filter: blur(5px);
   transform: translateX(-100%);
-  transition: 0.5s;
+  transition: 0.4s;
 }
 .show {
   opacity: 1;
